@@ -10,4 +10,12 @@ public class TestEntity {
     public void setMsg(String msg) {
         this.msg = msg;
     }
+
+    public void init(){
+        System.out.println("TestEntity被创建啦");
+    }
+
+    public void destroy(){
+        System.out.println("TestEntity被销毁");
+    }
 }

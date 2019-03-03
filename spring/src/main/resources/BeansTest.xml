@@ -13,4 +13,7 @@
     <bean id="testEntity2" class="com.ease.archiecture.springcore.TestEntity" scope="prototype">
         <property name="msg" value="Hello World!"/>
     </bean>
+
+    <bean id="exampleBean"
+          class="com.ease.archiecture.springcore.TestEntity" init-method="init" destroy-method="destroy"/>
 </beans>
