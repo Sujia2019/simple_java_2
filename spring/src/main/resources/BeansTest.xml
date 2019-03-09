@@ -16,4 +16,8 @@
 
     <bean id="exampleBean"
           class="com.ease.archiecture.springcore.TestEntity" init-method="init" destroy-method="destroy"/>
+
+
+
+
 </beans>
