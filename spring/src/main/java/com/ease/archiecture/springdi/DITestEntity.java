@@ -19,6 +19,9 @@ public class DITestEntity {
     }
 
     public DIEntity getDiEntity() {
+        System.out.println("aaaaaaa");
+        System.out.println("aaaaaaa");
+        System.out.println("aaaaaaa");
         return diEntity;
     }
 
