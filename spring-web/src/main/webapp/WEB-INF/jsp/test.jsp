@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: jw
@@ -12,5 +13,14 @@
 </head>
 <body>
 <p>ggggggg</p>
+<form:form method="GET" action="/redirect">
+    <table>
+        <tr>
+            <td>
+                <input type="submit" value="Redirect Page"/>
+            </td>
+        </tr>
+    </table>
+</form:form>
 </body>
 </html>
