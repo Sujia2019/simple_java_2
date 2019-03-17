@@ -5,7 +5,7 @@
     <aop:config>
         <aop:aspect id="log" ref="logging">
             <aop:pointcut id="selectAll"
-                          expression="execution(* com.ease.*.*(..))"/>
+                          expression="execution(* com.ease.*.*.*.*(..))"/>
             <aop:before pointcut-ref="selectAll" method="beforeAdvice"/>
             <aop:after pointcut-ref="selectAll" method="afterAdvice"/>
             <aop:after-returning pointcut-ref="selectAll"
