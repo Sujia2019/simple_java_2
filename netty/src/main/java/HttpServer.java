@@ -45,6 +45,6 @@ public class HttpServer {
     public static void main(String[] args) throws InterruptedException {
         HttpServer httpServer = new HttpServer();
         //绑定端口，端口随意。。。但也别太随意。。。。
-        httpServer.start(9999);
+        httpServer.start(55555);
     }
 }

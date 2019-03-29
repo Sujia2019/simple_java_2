@@ -6,6 +6,7 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.codec.http.*;
 
+import java.nio.charset.Charset;
 import java.util.concurrent.TimeUnit;
 
 public class HttpHandler extends ChannelInboundHandlerAdapter {
@@ -61,7 +62,7 @@ public class HttpHandler extends ChannelInboundHandlerAdapter {
 
             //response相关。。。
 //            String res = returnMessage.getMessage();
-            String res = "";
+            String res = "aaaaaaa";
             FullHttpResponse response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK, Unpooled.wrappedBuffer(res.getBytes("UTF-8")));
             response.headers().set(HttpHeaderNames.CONTENT_TYPE, "text/plain");
             response.headers().set(HttpHeaderNames.ACCESS_CONTROL_ALLOW_ORIGIN, "*");
