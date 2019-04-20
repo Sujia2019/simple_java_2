@@ -13,12 +13,12 @@ public class TimeServerHandler extends ChannelInboundHandlerAdapter {
 //        ByteBuf buf = (ByteBuf) msg;
 //        byte[] req = new byte[buf.readableBytes()];
 //        buf.readBytes(req);
-//        String body = new String(msg, "UTF-8");
+//        String body = new String(req, "UTF-8");
         String body = (String) msg;
         System.out.println("The time server receive order:" + body);
 //        String currentTime = "".equals(body) ? String.valueOf(new Date().getTime()) : "BAD ORDER\r\n";
         String currentTime = "ERROR" ;
-        if (body.equals("abc\r\n")) {
+        if (body.equals("abc")) {
             currentTime = String.valueOf(new Date().getTime());
         }
         ByteBuf resp = Unpooled.copiedBuffer(currentTime.getBytes());
